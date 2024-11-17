@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Prayer Time Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<style>
+    /* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font family */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+/* Navigation menu styles */
+nav {
+  background-color: #444;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Main content container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Prayer time display styles */
+.prayer-times {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prayer-times h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+</style>
+
+<body>
+  <header>
+    <img src="c:\Users\Youssef\Desktop\KnBfffiD-SA12200E.png" alt="c:\Users\Youssef\Desktop\KnBfffiD-SA12200E.png" style="width: 50px; height: auto; margin-left: 10px;">
+      <h1 style="display: inline-flex; align-items: center;">Botola Inwi</h1>
+      
+  </header>
+  
+  <nav>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Activties</a></li>
+      </ul>
+  </nav>
+  
+  <div class="container" id="container1" >
+      <div class="prayer-times">
+          <h2 style="text-align: center;">Today's Match</h2>
+          <h2 style="display: flex; justify-content: center; align-items: center; font-size: 24px; font-weight: bold; margin-top: 50px;">
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <img src="c:\Users\Youssef\Desktop\bkYK1GyB-Q1R9dE24.png" alt="Team 1 Flag" style="width: 50px; height: auto; margin-right: 10px;"> <!-- Replace with Team 1 flag URL -->
+                Union Touarga
+            </span>
+            
+            <span style="margin: 0 20px;">0 - 1</span> <!-- Display the result here -->
+        
+            <span style="display: flex; align-items: center; margin-left: 20px;">
+                Berkane
+                <img src="c:\Users\Youssef\Desktop\UPmgHwCa-dM1RWPli.png" alt="Team 2 Flag" style="width: 50px; height: auto; margin-left: 10px;"> <!-- Replace with Team 2 flag URL -->
+            </span>
+        </h2>
+        
+      </div>
+  
+    </div>
+    <div class="container" id="container1" >
+        <div class="prayer-times">
+            
+            <h2 style="display: flex; justify-content: center; align-items: center; font-size: 24px; font-weight: bold; margin-top: 50px;">
+              <span style="display: flex; align-items: center; margin-right: 20px;">
+                  <img src="c:\Users\Youssef\Desktop\hA0ehAzB-63LcsWgs.png" alt="Team 1 Flag" style="width: 50px; height: auto; margin-right: 10px;"> <!-- Replace with Team 1 flag URL -->
+                  Hassania Agadir
+              </span>
+              
+              <span style="margin: 0 20px;">2 - 1</span> <!-- Display the result here -->
+          
+              <span style="display: flex; align-items: center; margin-left: 20px;">
+                Chabab Mohammedia
+                  <img src="c:\Users\Youssef\Desktop\jZUCPOzB-QgRSIkyp.png" alt="Team 2 Flag" style="width: 50px; height: auto; margin-left: 10px;"> <!-- Replace with Team 2 flag URL -->
+              </span>
+          </h2>
+          
+        </div>
+
+    <div class="container" id="container1" >
+        <div class="prayer-times">
+                
+                <h2 style="display: flex; justify-content: center; align-items: center; font-size: 24px; font-weight: bold; margin-top: 50px;">
+                  <span style="display: flex; align-items: center; margin-right: 20px;">
+                      <img src="c:\Users\Youssef\Desktop\bkYK1GyB-Q1R9dE24.png" alt="Team 1 Flag" style="width: 50px; height: auto; margin-right: 10px;"> <!-- Replace with Team 1 flag URL -->
+                      Union Touarga
+                  </span>
+                  
+                  <span style="margin: 0 20px;">0 - 1</span> <!-- Display the result here -->
+              
+                  <span style="display: flex; align-items: center; margin-left: 20px;">
+                      Berkane
+                      <img src="c:\Users\Youssef\Desktop\UPmgHwCa-dM1RWPli.png" alt="Team 2 Flag" style="width: 50px; height: auto; margin-left: 10px;"> <!-- Replace with Team 2 flag URL -->
+                  </span>
+              </h2>
+              
+        </div>    
+  
+    <div class="container" id="container1" >
+        <div class="prayer-times">
+                
+                <h2 style="display: flex; justify-content: center; align-items: center; font-size: 24px; font-weight: bold; margin-top: 50px;">
+                  <span style="display: flex; align-items: center; margin-right: 20px;">
+                      <img src="c:\Users\Youssef\Desktop\bkYK1GyB-Q1R9dE24.png" alt="Team 1 Flag" style="width: 50px; height: auto; margin-right: 10px;"> <!-- Replace with Team 1 flag URL -->
+                      Union Touarga
+                  </span>
+                  
+                  <span style="margin: 0 20px;">0 - 1</span> <!-- Display the result here -->
+              
+                  <span style="display: flex; align-items: center; margin-left: 20px;">
+                      Berkane
+                      <img src="c:\Users\Youssef\Desktop\UPmgHwCa-dM1RWPli.png" alt="Team 2 Flag" style="width: 50px; height: auto; margin-left: 10px;"> <!-- Replace with Team 2 flag URL -->
+                  </span>
+              </h2>
+              
+        </div>
+    <div class="container" id="container1" >
+        <div class="prayer-times">
+                    
+                    <h2 style="display: flex; justify-content: center; align-items: center; font-size: 24px; font-weight: bold; margin-top: 50px;">
+                      <span style="display: flex; align-items: center; margin-right: 20px;">
+                          <img src="c:\Users\Youssef\Desktop\bkYK1GyB-Q1R9dE24.png" alt="Team 1 Flag" style="width: 50px; height: auto; margin-right: 10px;"> <!-- Replace with Team 1 flag URL -->
+                          Union Touarga
+                      </span>
+                      
+                      <span style="margin: 0 20px;">0 - 1</span> <!-- Display the result here -->
+                  
+                      <span style="display: flex; align-items: center; margin-left: 20px;">
+                          Berkane
+                          <img src="c:\Users\Youssef\Desktop\UPmgHwCa-dM1RWPli.png" alt="Team 2 Flag" style="width: 50px; height: auto; margin-left: 10px;"> <!-- Replace with Team 2 flag URL -->
+                      </span>
+                  </h2>
+                  
+        </div>
+    
+</body>
+
+</html>
